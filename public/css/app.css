@@ -1,0 +1,9 @@
+.container-jumbo {
+    height: 250px;
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover;
+}footer {
+    height: 30vh;
+}body {
+  height: 300vh;
+}
