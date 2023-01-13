@@ -1,6 +1,4 @@
 @import url('header/header.scss');
 @import url('footer/footer.scss');
-
-body {
-    height: 300vh;
-}
+@import url('main/home.scss');
+@import url('main/comic.scss');

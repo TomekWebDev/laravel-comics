@@ -1,14 +1,27 @@
 @extends('layouts.app')
 
 @section('main')
-    <div class="cards-container d-flex flex-wrap w-100">
-        @foreach ($comics as $elem)
-            <div class="card w-15">
-                <img class="card-img-top w-100" src="{{ $elem['thumb'] }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $elem['title'] }}</h5>
-                </div>
+    <div class="comics-section">
+
+        <div class="container py-5">
+
+            <div class=" d-flex flex-wrap">
+
+                @foreach ($comics as $elem)
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img class="card-img" class="comic-image" src="{{ $elem['thumb'] }}" alt="Card image cap">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-6 text-white">{{ $elem['title'] }}</h5>
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
-        @endforeach
+
+        </div>
+
     </div>
 @endsection
