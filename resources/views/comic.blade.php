@@ -43,9 +43,9 @@
 
     <div class="w-100 bg-light">
 
-        <div class="w-75 py-5 m-auto d-flex ">
+        <div class="w-75 py-5 m-auto d-flex justify-content-between">
 
-            <div class="talent w-50">
+            <div class="talent">
 
                 <h4>Talent</h4>
 
@@ -63,15 +63,15 @@
                 <div class="d-flex py-2">
                     <div class="w-25">Written by:</div>
                     <div class="w-75 text-primary">
-                        @foreach ($single_comic['writers'] as $artist)
-                            {{ $artist }},
+                        @foreach ($single_comic['writers'] as $writer)
+                            {{ $writer }},
                         @endforeach
                     </div>
                 </div>
                 <div class="separee w-100 bg-dark"></div>
             </div>
 
-            <div class="specs w-25 mx-5">
+            <div class="specs">
 
                 <h4>Specs</h4>
 

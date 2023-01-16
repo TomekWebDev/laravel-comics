@@ -101,3 +101,8 @@ footer {
 .separee {
     height: 1px;
 }
+
+.specs,
+.talent {
+    width: 48%;
+}
